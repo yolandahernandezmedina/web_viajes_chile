@@ -1,0 +1,79 @@
+/* Aplicar la sintaxis de CSS utilizando selectores y clases de manera correcta,
+definiendo notoriamente el aspecto visual del documento.
+● Utilizar recursos externos como Google Fonts y Font Awesome, para definir
+estilos de fuente.
+● El código debe estar ordenado, documentado e indentado. */
+* {
+    font-family: raleway;
+}
+body{
+    background-color: black;
+}
+header {
+    z-index: 1;
+}
+
+nav {
+    color: red;
+}
+
+.quienes-somos {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-info {
+    display: flex;
+    gap: 20px;
+}
+
+.info i {
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.quienes-somos p {
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.destacados {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contenedor-card {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.card-img-top{
+    height:150px ;
+}
+/* .card-body{
+    background-color: aquamarine;
+} */
+.contacto {
+    height: 500px;
+    font-weight: 100;
+    color: #ffffff;
+    
+}
+footer{
+   height:80px; 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: #ffffff;
+}
