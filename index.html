@@ -1,262 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viajes chile</title>
 
-    <!-- coneccion a bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viajes chile</title>
 
-    <!-- coneccion a CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- coneccion fuentes de tipografia -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- coneccion a iconos -->
-    <script
-      src="https://kit.fontawesome.com/9c4c52ef60.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- conexion a bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
 
-  <body class="">
-    <header class="position-relative">
-      <nav class="navbar bg-transparent navbar-expand-lg position-absolute">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/img/viajes.svg"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            Viajes Chile
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#somos">Quienes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#destacados">Destacados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search"></form>
-          </div>
+  <!-- conexion a CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- conexion fuentes de tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- conexion a iconos -->
+  <script src="https://kit.fontawesome.com/9c4c52ef60.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- barra de navegacion -->
+  <header class="position-relative">
+    <nav class="navbar bg-transparent navbar-expand-lg position-absolute">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+          Viajes Chile
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a data-mdb-smooth-scroll-init class="nav-link" aria-current="page" href="">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a data-mdb-smooth-scroll-init class="nav-link" href="#somos">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a data-mdb-smooth-scroll-init class="nav-link" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a data-mdb-smooth-scroll-init class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search"></form>
         </div>
-      </nav>
-    </header>
-    <main>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/img/carousel1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/carousel2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/carousel3.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- ● Una sección de presentación, utilizando favicons y 3 párrafos (debe desaparecer en
-tamaños pequeños de pantalla).
- -->
-      <section class="quienes-somos container">
-        <h4 id="somos">¿QUIENES SOMOS?</h4>
-        <hr />
-        <div class="contenedor-info">
-          <div class="info">
-            <i class="fas fa-plane bg-info"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-              officia sequi delectus ipsum ea, ad ut mollitia fugit quam eum eos
-              laborum temporibus laudantium, voluptas ab voluptatibus saepe enim
-              perspiciatis. Delectus obcaecati maxime placeat doloremque. Soluta
-              quo magnam minus quis possimus dicta, omnis autem ea reprehenderit
-              vero est odit odio illo nam? Accusamus corrupti nihil blanditiis
-              esse et consequatur necessitatibus?
-            </p>
-          </div>
-          <div class="info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              animi doloremque ipsa voluptatem accusamus, optio dicta suscipit
-              ex, eius quia numquam officiis, quidem neque commodi est velit
-              facere recusandae ut? Accusamus incidunt aliquid dolorem, quam
-              nobis voluptates, modi earum odit quidem iste iusto laudantium
-              cumque sed accusantium maxime quo minus facere eaque quis!
-              Corporis quaerat error impedit! Voluptate, officia accusamus.
-            </p>
-            <i class="fas fa-mountain bg-info"></i>
-          </div>
-          <div class="info">
-            <i class="fas fa-route bg-info"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              quam, itaque culpa sed eligendi eveniet quos eum odio. Voluptas
-              aspernatur ad laboriosam consequuntur vero aperiam deserunt iusto
-              natus soluta necessitatibus! Dolores a assumenda pariatur veniam
-              illo tenetur, culpa fugiat expedita quia obcaecati placeat facilis
-              autem architecto accusantium est. Ipsam, libero nulla sunt quis
-              tempore repudiandae inventore saepe laudantium quisquam illum?
-            </p>
-          </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Carrousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="..." />
         </div>
-      </section>
-      <!-- Una sección de destacados, que muestre 4 cards (tarjetas) con la imagen e
-información asociada. -->
-      <section class="destacados container">
-        <h4 id="destacados">DESTACADOS</h4>
-        <hr />
-        <div class="contenedor-card">
-          <div class="card" style="width: 18rem">
-            <img src="assets/img/card1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body bg-info">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
-            <div class="card-body bg-info">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="assets/img/card3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body bg-info">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="assets/img/card4.jpg" class="card-img-top" alt="..." />
-            <div class="card-body bg-info">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="..." />
         </div>
-      </section>
-      <!-- ● Una sección de formulario de contacto -->
-      <section class="contacto mt-2 container">
-        <h4 id="contacto">CONTACTO</h4>
-        <hr />
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Nombre</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              aria-describedby=""
-            />
-            <div id="" class="form-text"></div>
-          </div>
-          <div class="mb-3">
-            <label for="asunto" class="form-label">Asunto</label>
-            <input type="text" id="asunto" class="form-control" />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Mensaje</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="5"
-            ></textarea>
-          </div>
-          <button type="enviar" class="btn btn-primary bg-info">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer class=" bg-info">
-      <!-- Una sección footer con links a las redes sociales.-->
-      <h6>VIAJES CHILE</h6>
-      <div class="red-social">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-square-facebook"></i>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="..." />
+        </div>
       </div>
-    </footer>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Quienes somos -->
+    <section class="quienes-somos container d-xs-flex d-sm-none d-lg-flex d-xl-flex">
+      <h4 id="somos">¿QUIENES SOMOS?</h4>
+      <hr />
+      <div class="contenedor-info">
+        <div class="info">
+          <i class="fas fa-plane bg-info"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            officia sequi delectus ipsum ea, ad ut mollitia fugit quam eum eos
+            laborum temporibus laudantium, voluptas ab voluptatibus saepe enim
+            perspiciatis. Delectus obcaecati maxime placeat doloremque. Soluta
+            quo magnam minus quis possimus dicta, omnis autem ea reprehenderit
+            vero est odit odio illo nam? Accusamus corrupti nihil blanditiis
+            esse et consequatur necessitatibus?
+          </p>
+        </div>
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            animi doloremque ipsa voluptatem accusamus, optio dicta suscipit
+            ex, eius quia numquam officiis, quidem neque commodi est velit
+            facere recusandae ut? Accusamus incidunt aliquid dolorem, quam
+            nobis voluptates, modi earum odit quidem iste iusto laudantium
+            cumque sed accusantium maxime quo minus facere eaque quis!
+            Corporis quaerat error impedit! Voluptate, officia accusamus.
+          </p>
+          <i class="fas fa-mountain bg-info"></i>
+        </div>
+        <div class="info">
+          <i class="fas fa-route bg-info"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            quam, itaque culpa sed eligendi eveniet quos eum odio. Voluptas
+            aspernatur ad laboriosam consequuntur vero aperiam deserunt iusto
+            natus soluta necessitatibus! Dolores a assumenda pariatur veniam
+            illo tenetur, culpa fugiat expedita quia obcaecati placeat facilis
+            autem architecto accusantium est. Ipsam, libero nulla sunt quis
+            tempore repudiandae inventore saepe laudantium quisquam illum?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Destacados -->
+    <section class="destacados container">
+      <h4 id="destacados">DESTACADOS</h4>
+      <hr />
+      <div class="contenedor-card">
+        <div class="card" style="width: 18rem">
+          <img src="assets/img/card1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body bg-info">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body bg-info">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="assets/img/card3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body bg-info">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="assets/img/card4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body bg-info">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ● Una sección de formulario de contacto -->
+    <section class="contacto container">
+      <h4 id="contacto">CONTACTO</h4>
+      <hr />
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" aria-describedby="" />
+          <div id="" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" id="asunto" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary bg-info">
+          Enviar
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="bg-info">
+    <!-- Una sección footer con links a las redes sociales.-->
+    <h6>VIAJES CHILE</h6>
+    <div class="red-social">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-square-twitter"></i>
+      <i class="fa-brands fa-square-facebook"></i>
+    </div>
+  </footer>
 
-    <!-- jQuery library -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.4.min.js"
-      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-      crossorigin="anonymous"
-    ></script>
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 
-    <!-- JavaScript -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
